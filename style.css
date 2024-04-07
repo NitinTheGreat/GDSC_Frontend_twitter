@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-white: hsl(252,30%,100%);
+    --color-light: hsl(252,30%,95%);
+    --color-gray: hsl(252,15%,65%);
+    --color-dark: hsl(252,30%,17%);
+    --color-black: hsl(252,30%,10%);
+    --color-primary: hsl(252,75%,60%);
+    --color-secondary: hsl(252,100%,90%);
+    --color-success: hsl(120,95%,65%);
+    --color-danger: hsl(0,95%,65%);
+
+    --border-radius : 2rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1 rem;
+    --card-border-radius: 1rem;
+    --btn-radius: 1.5rem;
+}
+
+* ,* ::before , * ::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark);
+    background: var(--color-light);
+    overflow-x: hidden;
+}
+
+.container{
+    width: 80%;
+    margin:0 auto;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-photo{
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.btn{
+    display: inline-block;
+    padding: var(--btn-padding);
+    border-radius: var(--btn-radius);
+    font-weight: 500;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn-primary{
+    background: var(--color-primary);
+    color: white;
+}
+
+.text-bold{
+    font-weight: 500;
+
+}
+
+.text-muted{
+    color: var(--color-gray);
+}
+
+
+/* Navbar */
+
+nav{
+    width: 100%;
+    background: var(--color-white);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+}
+
+nav.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.create{
+    display: flex;
+    gap: 2rem;
+    /* justify-content: flex-end; */
+    margin-right: -5vw;
+    align-items: center;
+
+}
+.search-bar{
+    background: var(--color-light);
+    /* background: pink; */
+
+    border-radius: var(--border-radius);
+    padding: var(--search-padding);
+
+}
+.search-bar input[type="search"]{
+    border: black;
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    /* padding: 0.5rem; */
+    font-size: 0.9rem;
+    color: var(--color-dark);
+}
+ .search-bar input[type="search"]::placeholder{
+    color: var(--color-gray);
+}
+
