@@ -18,6 +18,9 @@
     --card-padding: 1 rem;
     --card-border-radius: 1rem;
     --btn-radius: 1.5rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
 }
 
 * ,* ::before , * ::after {
@@ -126,4 +129,149 @@ nav.container{
  .search-bar input[type="search"]::placeholder{
     color: var(--color-gray);
 }
+/* styling of main section  */
+/* styling of the left sidebar */
+main{
+    position: relative;
+    top: 5.4rem;
+}
+main .container{
+    display: grid;
+    grid-template-columns: 18vw auto 20vw;
+    column-gap: 2rem;
+    position: relative;
+}
+main .container .left{
+    height: max-content;
+    position: sticky;
+    ;
+    top: var(--sticky-top-left);
+}
 
+main .container .left .profile{
+    display: flex;
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    padding: var(--card-padding);
+    align-items: center;
+    column-gap: 1rem;
+    /* width: 130%; */
+    /* justify-content: center; */
+    padding: 10px;
+}
+
+.left .sidebar{
+    margin-top: 1rem;
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    /* width: 100%; */
+    /* display: inline; */
+}
+.left .sidebar .menu-item{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    cursor: pointer;
+    translate: all 300ms ease;
+    position: relative;
+    height: 3.6rem;
+}
+
+.left .sidebar .menu-item:hover{
+    background: var(--color-light);
+}
+/* styling on the icons */
+.left .sidebar i{
+    font-size: 1.4rem;
+    color: var(--color-gray);
+    margin-left: 2rem;
+    position: relative;
+}
+
+.left .sidebar h3{
+    margin-left:1.5rem ;
+    font-size: 1rem;
+}
+
+.left .sidebar .active{
+    background: var(--color-light);
+    border-left: 4px solid var(--color-primary);
+}
+
+.left .sidebar .active i,
+.left .sidebar .active h3{
+    color: var(--color-primary);
+    /*not working  unable to target this*/ 
+    /* done */
+}
+
+.left .sidebar .active::before{
+    content: "";
+    position: absolute;
+    width: 0.5rem;
+    height: 100%;
+    /* background: var(--color-primary); */
+    display: absolute;
+}
+.left .sidebar .menu-item:first-child.active{
+    border-top-left-radius: var(--card-border-radius);
+    overflow: hidden;
+}
+.left .sidebar .menu-item .more-border {
+    border-bottom-left-radius: var(--card-border-radius);
+    overflow: hidden;
+} 
+
+.left .btn{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* End of left sidebar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (max-width: 1200px){
+    .container{
+        width: 96%;
+    }
+    main .container{
+        grid-template-columns: 5rem  auto 30vw;
+        gap: 1rem;
+
+    }
+     .left{
+        width: 5rem;
+        z-index: 5;
+
+    }
+    main .container .left .profile{
+        display: none;
+    }
+    .sidebar h3{
+        display: none;
+    }
+    .left .btn{
+        display: none;
+    }
+
+    
+}
