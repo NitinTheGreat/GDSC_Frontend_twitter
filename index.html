@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,9 +32,11 @@
 
 <!-- nav ends here -->
 
-<!-- left navigation bar now -->
+
 <main>
     <div class="container">
+
+        <!-- left navigation bar now -->
         <div class="left">
             <a class="profile">
                 <div class="profile-photo">
@@ -48,32 +51,40 @@
             </a>
             <!-- sidebar that will have the different things to do -->
             <div class="sidebar">
-                <a  class="menu-item active">
+                <a class="menu-item active">
 
-                       <span><i class="uil uil-home"></i></span><h3>Home</h3>
+                    <span><i class="uil uil-home"></i></span>
+                    <h3>Home</h3>
                 </a>
-                <a  class="menu-item">
-                    <span><i class="uil uil-search"></i></span> <h3>Search</h3>
+                <a class="menu-item">
+                    <span><i class="uil uil-search"></i></span>
+                    <h3>Search</h3>
                 </a>
-                <a  class="menu-item">
-                    <span><i class="uil uil-bell " id="Notifications"></i></span> <h3>Notifications</h3>
+                <a class="menu-item">
+                    <span><i class="uil uil-bell " id="Notifications"></i></span>
+                    <h3>Notifications</h3>
                 </a>
-                <a  class="menu-item">
-                    <span><i class="uil uil-comment-alt-message" id="messages-notifications"></i></span> <h3>Messages</h3>
+                <a class="menu-item">
+                    <span><i class="uil uil-comment-alt-message" id="messages-notifications"></i></span>
+                    <h3>Messages</h3>
                 </a>
-                <a  class="menu-item">
-                    <span><i class="uil uil-package"></i></span> <h3>Grok</h3>
+                <a class="menu-item">
+                    <span><i class="uil uil-package"></i></span>
+                    <h3>Grok</h3>
                 </a>
-                <a  class="menu-item">
-                    <span><i class="uil uil-list-ul"></i></span> <h3>Lists</h3>
+                <a class="menu-item">
+                    <span><i class="uil uil-list-ul"></i></span>
+                    <h3>Lists</h3>
                 </a>
-                <a  class="menu-item">
-                    <span><i class="uil uil-user-circle"></i></span> <h3>Profile</h3>
+                <a class="menu-item">
+                    <span><i class="uil uil-user-circle"></i></span>
+                    <h3>Profile</h3>
                 </a>
-                <a  class="menu-item more-border">
-                    <span><i class="uil uil-ellipsis-h"></i></span> <h3>More</h3>
+                <a class="menu-item more-border">
+                    <span><i class="uil uil-ellipsis-h"></i></span>
+                    <h3>More</h3>
 
-                    
+
                 </a>
 
             </div>
@@ -82,17 +93,85 @@
             <label for="create-post" class=" btn btn-primary">Post</label>
 
         </div>
+
+        <!-- middle section of the webpage -->
+
         <div class="middle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quam vero saepe autem inventore quas suscipit quibusdam velit nam veniam debitis quos ducimus doloremque porro ipsa cumque voluptatum consectetur repellat dicta non.
+            <form class="create-post">
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg" alt="">
+                </div>
+                <input type="text" placeholder="What's happening!?" id="create-post">
+                <input type="submit" value="Post" class="btn btn-primary">
+            </form>
+        
+            <!-- feed -->
+            <div class="feeds">
+                <div class="feed">
+        
+                    <div class="head">
+        
+                        <div class="profile-photo">
+                            <img src="./images/profile-19.jpg" alt="">
+                        </div>
+                        <div class="ingo">
+                            <h3>Nitin</h3>
+                            <small>Gorakhpur,India , 9 minutes ago</small>
+                        </div>
+                        
+                    </div>
+                    <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                    <div class="caption">
+                        <p>Roses are Red, My Screen is Blue, Because I deleted System32</p>
+                    </div>
+        
+                    <div class="photo">
+                        <img src="./images/feed-1.jpg" alt="">
+                    </div>
+        
+                    <div class="action-button">
+                        <div class="interaction-buttons">
+                            <div class="same"><span><i class="uil uil-comment"></i></span>
+                            <h4 class="aText">1.2k</h4></div>
+                            <div class="same"><span><i class="uil uil-comment-redo"></i></span>
+                            <h4 class="aText">69</h4></div>
+                            <div class="same"><span><i class="uil uil-heart"></i></span>
+                            <h4 class="aText">3.9k</h4></div>
+                            <div class="same"><span><i class="uil uil-graph-bar"></i></span>
+                            <h4 class="aText">811</h4></div>
+                            
+                            
+                        </div>
+                    
+        
+                    <div class="bookmark">
+                        <span><i class="uil uil-bookmark"></i></span>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
+        
+
+
+
+
+
+
+
+
+        <!-- right section of the webpage -->
         <div class="right">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minus cupiditate nobis voluptas veritatis. Repellat, saepe placeat autem esse assumenda voluptas, quos vero, dicta dignissimos illo iusto ipsum laborum consequatur commodi sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minus cupiditate nobis voluptas veritatis.
+            Repellat, saepe placeat autem esse assumenda voluptas, quos vero, dicta dignissimos illo iusto ipsum laborum
+            consequatur commodi sit.
         </div>
 
     </div>
 </main>
 
 <body>
-    
+
 </body>
+
 </html>

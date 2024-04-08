@@ -169,7 +169,7 @@ main .container .left .profile{
 }
 .left .sidebar .menu-item{
     display: flex;
-    padding: 1rem;
+    /* padding: 1rem; */
     align-items: center;
     /* justify-content: center; */
     width: 100%;
@@ -235,6 +235,87 @@ main .container .left .profile{
 
 
 
+/* styling of the middle section */
+
+/* styling of the feeds  */
+
+.middle .feeds .feed{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    margin: 1rem 0;
+    position: relative;
+    font-size: 0.85 rem;
+    line-height: 1.5;
+    padding-left: 10px;
+
+}
+
+.middle .feed .head{
+    padding-left: 0.4vw;
+    padding-top: 0.8vh;
+    margin-bottom: 0.5rem;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1rem;
+    align-items: center;
+   
+}
+.middle .feed .edit {
+    position: absolute;
+    top: 0.5vh;
+    right: 0.5vw;
+    font-size: 1.4rem;
+}
+
+.middle .feed .user{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.middle .feed .photo{
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    margin: 0.7rem 0;
+    padding-right: 10px;
+}
+.middle .feed .action-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 0.6rem;
+}
+
+/* testing */ 
+/* done testing. working */
+.aText{
+    font-size: medium;
+    font-weight: normal;
+}
+.middle .feed .action-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* display: block; */
+}
+
+.middle .feed .interaction-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5vw; 
+}
+.middle .feed .interaction-buttons .same{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+.middle .feed .bookmark {
+    margin-left: auto;
+}
 
 
 
