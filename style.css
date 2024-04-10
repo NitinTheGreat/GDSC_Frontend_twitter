@@ -410,13 +410,9 @@ main .container .right{
     position: sticky;
     /* top: var(--sticky-top-right); */
     top: var(--sticky-top-left);
-    /* bottom: 100vh; */
-    /* top: 100vh; */
-    /* position: fixed; */
-    /* background: var(--color-white);
-    border-radius: var(--card-border-radius);
-    padding: var(--card-padding);
-    */
+
+    
+    
     padding:5%; 
 }
 #trending{
@@ -425,23 +421,32 @@ main .container .right{
 }
 
 .container .right .friend-requests{
-    display: flex;
+    /* display: flex; */
     position: absolute;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
-    background: var(--color-white);
-    border-radius: var(--card-border-radius);
+    
     padding: var(--card-padding);
     
     padding:5%;
 }
-.edit-trending{
+.container .right .friend-requests .trending-users{
+    background: var(--color-white);
+    border-radius: 10px;
+    margin: 1rem 0;
+    width: 15vw;
+    height: 14vh;
+    padding: 7%;
     position: relative;
-    top: 0.5vh;
-    right: 0.5vw;
-    font-size: 1.4rem;
 }
+.edit-trending {
+    position: absolute;
+    top: 0.2vh;  /* Adjust top for slightly more padding */
+    right: 0.2vw;  /* Adjust right for slightly more padding */
+    font-size: 1.4rem;
+  }
+  
 
 
 
