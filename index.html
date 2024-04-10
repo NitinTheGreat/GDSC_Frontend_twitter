@@ -14,9 +14,9 @@
 </head>
 <nav>
     <div class="container">
-        <h2 class="log">
-            Twitter
-        </h2>
+        <div class="twitter-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="">
+    </div>
         <div class="search-bar">
             <i class="uil uil-search"></i>
             <input type="search" placeholder="Search ">
@@ -97,13 +97,36 @@
         <!-- middle section of the webpage -->
 
         <div class="middle">
-            <form class="create-post">
+            <!-- <form class="middle-post">
                 <div class="profile-photo">
                     <img src="./images/profile-1.jpg" alt="">
-                </div>
+                
                 <input type="text" placeholder="What's happening!?" id="create-post">
+               
                 <input type="submit" value="Post" class="btn btn-primary">
-            </form>
+            </div>
+            </form> -->
+            <div class="post-container">
+                <div class="first-row">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
+                    </div>
+                    <div class="input-area">
+                        <input type="text" placeholder="What's happening!?" id="create-post">
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="icons">
+                        <span><i class="uil uil-image-search"></i></span>
+                        <span><i class="uil uil-camera"></i></span>
+                        <span><i class="uil uil-list-ui-alt"></i></span>
+                        <span><i class="uil uil-grin"></i></span>
+                        <span><i class="uil uil-calendar-alt"></i></span>
+                        <span><i class="uil uil-map-marker"></i></span>
+                    </div>
+                    <button type="button" class="btn btn-primary">Post</button>
+                </div>
+            </div>
 
             <!-- feed -->
             <div class="feeds">
@@ -698,25 +721,26 @@
         <div class="right">
             <h2 id="trending">What's Trending</h2>
             <div class="friend-requests">
-                
+
                 <div class="request">
                     <div class="info">
                         <div>
                             <h5>Politics</h5><span class="edit-trending"><i class="uil uil-ellipsis-h"></i></span>
-                                <h3>Arvind Kejriwal</h3>
-                                <h5>100k Posts</h5>
+                            <h3>Arvind Kejriwal</h3>
+                            <h5>100k Posts</h5>
 
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-      <!--right div ends-->  </div>
+        </div>
+        <!--right div ends-->
+    </div>
 
     </div>
 </main>
 
 </body>
 
-  
+
 </html>
