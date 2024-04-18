@@ -31,7 +31,7 @@ googleLogin.addEventListener("click", function(){
     
     
     const user = result.user;
-    alert("Login Successful");
+    // alert("Login Successful");
     console.log(user);
     window.location.href = "dashboard.html";
    
