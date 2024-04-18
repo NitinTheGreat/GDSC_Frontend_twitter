@@ -160,7 +160,7 @@ main .container {
    
     column-gap: 2rem;
     position: relative;
-    align-items: flex-start;
+     align-items: flex-start;    /* Helped in removing the problem after 1  day*/
     /* height: 150vh; */
 }
 
@@ -411,8 +411,6 @@ main .container .right{
     /* top: var(--sticky-top-right); */
     top: var(--sticky-top-left);
 
-    
-    
     padding:5%; 
 }
 #trending{
@@ -442,23 +440,11 @@ main .container .right{
 }
 .edit-trending {
     position: absolute;
-    top: 0.2vh;  /* Adjust top for slightly more padding */
-    right: 0.2vw;  /* Adjust right for slightly more padding */
+    top: 0.2vh;  
+    right: 0.2vw;  
     font-size: 1.4rem;
   }
   
-
-
-
-
-
-
-
-
-
-
-
-
 /* media queries */
 @media screen and (max-width: 1200px) {
     .container {
